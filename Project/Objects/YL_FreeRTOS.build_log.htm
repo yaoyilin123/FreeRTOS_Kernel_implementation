@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information:  ,  , LIC=FYKYW-QAEL9-PCRJ8-3WC0W-U3XT0-SRMN1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.15.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      UL2CM3.DLL V1.155.8.0
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+C:\Users\11055\Desktop\FreeRtos_0\Project\YL_FreeRTOS.uvprojx
+Project File Date:  11/22/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling main.c...
+compiling port.c...
+compiling task.c...
+..\freertos\protable\RVDS\ARM_CM3\task.c(468): warning:  #550-D: variable "pxTCB" was set but never used
+      TCB_t *pxTCB = NULL;
+..\freertos\protable\RVDS\ARM_CM3\task.c(562): warning:  #940-D: missing return statement at end of non-void function "xTaskIncrementTick"
+  }
+..\freertos\protable\RVDS\ARM_CM3\task.c(496): warning:  #550-D: variable "xSwitchRequired" was set but never used
+      BaseType_t xSwitchRequired = pdFALSE;
+..\freertos\protable\RVDS\ARM_CM3\task.c(32): warning:  #550-D: variable "xIdleTaskHandle" was set but never used
+  static TaskHandle_t xIdleTaskHandle                                   = NULL;
+..\freertos\protable\RVDS\ARM_CM3\task.c: 4 warnings, 0 errors
+compiling list.c...
+assembling startup_ARMCM3.s...
+compiling system_ARMCM3.c...
+linking...
+Program Size: Code=2152 RO-data=224 RW-data=68 ZI-data=6588  
+".\Objects\YL_FreeRTOS.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.3.0.pack
+                ARM::Device:Startup:1.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: Startup Version: 1.0.1
+   * Component: CORE Version: 4.1.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\11055\Desktop\FreeRtos_0\Project\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM3\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::Device:Startup:1.0.1
+      Source file:   Device\ARM\ARMCM3\Source\system_ARMCM3.c
+      Include file:  Device\ARM\ARMCM3\Include\ARMCM3.h
+      Source file:   Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
+
+   * Component: ARM::CMSIS:CORE:4.1.0
+</pre>
+</body>
+</html>
