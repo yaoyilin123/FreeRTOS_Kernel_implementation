@@ -1,2 +1,4 @@
 # FreeRTOS_Kernel_implementation
-手敲内核FreeRTOS
+这是一个从0到1实现FreeRTOS内核的文件
+
+在逐步实现内核的过程中，会做相应的实验以证明编写正确。 具体实验内容和说明请看DOC文件下的Readme.txt
